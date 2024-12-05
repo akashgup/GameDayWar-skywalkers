@@ -25,20 +25,20 @@
 - [x] Get User By Username
 - [x] Get User Data
 - [ ] Hardcode Username In Session
-- [ ] Hash With MD5
+- [x] Hash With MD5
 - [ ] HTML Injection.html
 - [ ] Insecure Base64 Encryption
 - [ ] Insecurely Change Directory Access Control
 - [ ] Insecurely Execute Command
 - [ ] Insecurely Modify Registry
 - [ ] Insecure Modify File Attributes
-- [ ] Is Default Password
+- [x] Is Default Password
 - [ ] Log Exception Directly
 - [ ] Log Sensitive Information
 - [ ] Log User Input To Console
-- [ ] Make Api Request
+- [x] Make Api Request
 - [ ] Make Http Client Request
-- [ ] Open File Stream
+- [x] Open File Stream
 - [ ] Open Url With User Input
 - [ ] Perform Unverified Bank Transfer
 - [ ] Read File From Fixed Directory
@@ -63,7 +63,7 @@
 - [ ] Write Exception To File
 
 ## Team Challenges
-- [ ] 1
+- [x] 1
 - [ ] 2
 - [ ] 3
 - [ ] 4
