@@ -4,8 +4,8 @@
 - [x] Access Admin Panel
 - [ ] Add User Input To Cookie
 - [x] Assign User Input To Inner Html
-- [ ] Authenticate User
-- [ ] Authenticate With Hardcoded Password
+- [x] Authenticate User
+- [x] Authenticate With Hardcoded Password
 - [ ] Connect With Hardcoded Connection String
 - [ ] Create Auth Cookie
 - [ ] Create Tcp Client
