@@ -1,6 +1,6 @@
 public void MakeApiRequest()
 {
-    string token = "Bearer hardcoded-token"; // Insecure: Hardcoded token
+    string token = Environment.GetEnvironmentVariable("Bearer-token"); // Insecure: Hardcoded token
     using (HttpClient client = new HttpClient())
     {
         client.DefaultRequestHeaders.Add("Authorization", token);
