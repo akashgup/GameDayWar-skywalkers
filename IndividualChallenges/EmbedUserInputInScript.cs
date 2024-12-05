@@ -1,6 +1,7 @@
 public void EmbedUserInputInScript(string userInput)
 {
-    // Insecure: Embeds user input directly into a <script> tag
-    var html = $"<script>alert('{userInput}')</script>";
+    // Secure: Encodes user input to prevent XSS
+    var encodedInput = HttpUtility.JavaScriptStringEncode(userInput);
+    var html = $"<script>alert('{encodedInput}')</script>";
     Console.WriteLine("Generated HTML: " + html);
 }
