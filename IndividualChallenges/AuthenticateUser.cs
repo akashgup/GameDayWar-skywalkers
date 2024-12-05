@@ -1,6 +1,6 @@
 public void AuthenticateUser(string password)
 {
-    if (password == "admin123") // Hardcoded password
+    if (password == Environment.GetEnvironmentVariable("PASSWORD")) // Hardcoded password
     {
         GrantAccess(); // Insecurely grants access
     }
