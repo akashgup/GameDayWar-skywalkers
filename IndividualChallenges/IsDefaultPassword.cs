@@ -1,4 +1,4 @@
 public bool IsDefaultPassword(string password)
 {
-    return password == "default"; // Hardcoded default password
+    return string.Equals(password, "default", StringComparison.OrdinalIgnoreCase); // Hardcoded default password
 }
