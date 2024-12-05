@@ -9,7 +9,7 @@ namespace VulnerableWebAPI.Controllers
     public class InsecureController : ApiController
     {
         // Hardcoded Database Connection String (Vulnerability #3)
-        private readonly string connectionString = "Server=myServer;Database=SensitiveDB;User Id=admin;Password=admin123;";
+        private readonly string connectionString = Environment.GetEnvironmentVariable("Connectionstring");
 
         // Insecure endpoint to fetch user data
         [HttpGet]
@@ -19,12 +19,13 @@ namespace VulnerableWebAPI.Controllers
             try
             {
                 // SQL Injection Vulnerability (#1)
-                string query = $"SELECT * FROM Users WHERE UserId = '{userId}'";
+                string query = $"SELECT * FROM Users WHERE UserId = @userId";
 
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
                     SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@userId", userId);
                     SqlDataReader reader = cmd.ExecuteReader();
 
                     if (reader.Read())
