@@ -56,7 +56,12 @@ namespace VulnerableWebAPI.Controllers
             try
             {
                 // Insecure Direct Object Reference (#2)
-                string filePath = "C:\\SecureFiles\\" + fileName;
+                if (fileName.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0)
+                   {                 
+                       throw new ArgumentException("Invalid file name.");                 
+                   }
+
+                   string filePath = "C:\\SecureFiles\\" + fileName;
 
                 // Unrestricted File Access (#5)
                 if (File.Exists(filePath))
@@ -75,6 +80,7 @@ namespace VulnerableWebAPI.Controllers
 
         // Insecure debug endpoint
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         [Route("debug")]
         public IHttpActionResult Debug()
         {
