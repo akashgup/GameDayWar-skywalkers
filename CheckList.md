@@ -52,7 +52,7 @@
 - [ ] Send Email
 - [ ] Send Sensitive Data To Untrusted Url
 - [ ] Set Unlimited Session Timeout
-- [ ] Store Token In Session
+- [x] Store Token In Session
 - [ ] Swallow Exception
 - [ ] Throw Generic Exception
 - [ ] Use Hardcoded Api Key
