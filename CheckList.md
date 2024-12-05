@@ -1,9 +1,9 @@
 # CheckList
 
 ## Individual Challenges
-- [ ] Access Admin Panel
+- [x] Access Admin Panel
 - [ ] Add User Input To Cookie
-- [ ] Assign User Input To Inner Html
+- [x] Assign User Input To Inner Html
 - [ ] Authenticate User
 - [ ] Authenticate With Hardcoded Password
 - [ ] Connect With Hardcoded Connection String
@@ -15,15 +15,15 @@
 - [ ] Delete File
 - [ ] Delete Order
 - [ ] Download File
-- [ ] Embed User Input In Script
+- [x] Embed User Input In Script
 - [ ] Encrypt With DES
 - [ ] Encrypt With Hardcoded AES Key
 - [ ] Encrypt With Hardcoded Key
 - [ ] Execute Script
 - [ ] Generate Jwt With Hardcoded Secret
 - [ ] Get Product By Name
-- [ ] Get User By Username
-- [ ] Get User Data
+- [x] Get User By Username
+- [x] Get User Data
 - [ ] Hardcode Username In Session
 - [ ] Hash With MD5
 - [ ] HTML Injection.html
